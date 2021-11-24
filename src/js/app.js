@@ -8,8 +8,9 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
   
-  const image = document.querySelector(".image");
-  image.addEventListener("click", () => {
+  const i = document.querySelector(".image");
+  i.addEventListener("click", () => {
+	var image = i.getContext("2d");
 	image.scale(2, 2);
   });
 });
