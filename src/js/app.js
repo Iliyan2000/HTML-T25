@@ -8,9 +8,9 @@ window.addEventListener("DOMContentLoaded", () => {
     alert("💣");
   });
   
-  const i = document.querySelector(".image");
+  const i = document.querySelector("canvas");
   i.addEventListener("click", () => {
-	var image = i.getContext("2d");
+	const image = i.getContext("2d");
 	image.scale(2, 2);
   });
 });
